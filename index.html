@@ -34,10 +34,19 @@
   <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css">
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  <link rel="stylesheet" href="assets/css/welcome.css">
+  <script src="assets/js/welcome.js"></script>
 </head>
 
 <body>
-
+  <div class="welcome">
+    <div class="car-img">
+        <img src="assets/images/site_logo/logo.png" alt="">
+    </div>
+    <p>Your One Stop Car Shop !</p>
+  </div>
   <div class="page_wrapper">
 
     <div class="backtotop"><a href="#" class="scroll"><i class="fa-solid fa-arrow-up"></i></a>
@@ -61,18 +70,29 @@
                 <h1 class="hero_title wow" data-splitting>Keep your car looking New</h1>
 
                 <p>Advanced Technology. Poweful Performance. Premium Finish</p>
+                <div class="btnContainer">
                   <a class="btn btn-primary" href="#contactus">
                     <span class="btn_text">Get Service</span>
                   </a>
                   <a class="btn btn-secondary" href="about.html">
                     <span class="btn_text">About Us</span>
                   </a>
+                </div>
+
                   <style>
+                    .btnContainer{
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-evenly;
+                    }
                     .hero_section_content .btn-secondary{
                       margin-left: 1.3rem;
                     }
 
                     @media screen and (max-width: 426px){
+                      .btnContainer{
+                      flex-direction: column;
+                    }
                       .hero_section_content .btn-secondary{
                       margin-top: 0.8rem;
                       margin-left: 0rem;
@@ -351,6 +371,21 @@
             <div class="col-"><a class="brand_logo_item" href="#!"><img src="assets/images/brands/brand_logo_img_10.png" alt=""></a></div>
             <div class="col-"><a class="brand_logo_item" href="#!"><img src="assets/images/brands/brand_logo_img_11.png" alt=""></a></div>
         </div>
+        <style>
+         
+
+          @media screen and (max-width: 426px){
+            .brand_logo_carousel{
+              flex-direction: column;
+              
+          }
+          .brand_logo_item img {
+            max-height: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
+          }
+        </style>
     </section>
       
       <section class="service_section bg_gray_dark">
@@ -751,13 +786,7 @@
                       <h3 class="item_title">Office Hours</h3>
                       <ul class="info_list unordered_list_block">
                         <li><span class="info_text d-flex align-items-center justify-content-between"><span>Monday -
-                              Thuesday</span> <span>8 am - 8 pm</span></span>
-                        </li>
-                        <li><span class="info_text d-flex align-items-center justify-content-between"><span>Friday</span>
-                            <span>8 am - 6 pm</span></span>
-                        </li>
-                        <li><span class="info_text d-flex align-items-center justify-content-between"><span>Saturday</span>
-                            <span>9 am - 4 pm</span></span>
+                              Saturday</span> <span>9:30 am - 7:30 pm</span></span>
                         </li>
                         <li><span class="info_text d-flex align-items-center justify-content-between"><span>Sunday</span>
                             <span>Closed</span></span>
@@ -769,7 +798,7 @@
                     <div class="contact_info_box">
                       <h3 class="item_title">Customer Support</h3>
                       <ul class="info_list unordered_list_block">
-                        <li><span class="info_text mb-3"><span class="d-block"><a href="tel:+918460689803">+91 84606 89803</a> </span>
+                        <li><span class="info_text mb-3"><span class="d-block"><a href="tel:+91777897744">+91 77789 77442</a> </span>
                           <span class="d-block">
                           <a href="https://instagram.com/miracle_carstudios">@miracle_carstudios</a></span></span>
                         </li>
@@ -841,7 +870,7 @@
   </script>
   <script src="assets/js/dark-light.js">
   </script>
-  <script src="assets/js/main.js">
+  <!-- <script src="assets/js/main.js"> -->
   </script>
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJVCSMRE9D">
   </script>
